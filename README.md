@@ -38,7 +38,7 @@ This project includes a log visualization tool that helps analyze the behavior o
 go test -v -run <TestName> > rlog.txt 2>&1
 go run path/to/raft-testlog-viz/main.go < rlog.txt
 xdg-open <output-file>.html
-
+```
 ## Experiment / Observation 
 
 ### Part 1: Leader Election Experiments
