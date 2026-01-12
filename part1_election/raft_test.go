@@ -299,7 +299,7 @@ func measureLeaderElectionTime(t *testing.T, n int) time.Duration {
 }
 
 func TestLeaderElectionTimeScaling(t *testing.T) {
-
+	t.Log("Here")
 	// Optional: run multiple trials to smooth randomness
 	trials := 3
 
@@ -321,8 +321,10 @@ func TestLeaderElectionTimeScaling(t *testing.T) {
 		return r
 	}
 
+	t.Log("BEFORE run")
 	cluster_ := run(5)
-	
+	t.Log("AFTER run")
+	t.Logf("Output")
 	t.Logf("[TIMING] %d nodes: per-trial=%v avg=%v", cluster_.n, cluster_.durs, cluster_.avg)
 
 }
