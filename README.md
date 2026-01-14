@@ -1,6 +1,11 @@
 # Raft Consensus Project
 CSE707 Distributed Systems
 
+## Explanation Video
+
+Watch the walkthrough video experimenting the Raft Algorithm:  
+[YouTube – Raft Algorithm Experiment](https://youtu.be/VT9e9b8kKwc)
+
 ## Introduction
 
 This project is an implementation of the Raft consensus algorithm developed as part of the CSE707 Distributed Systems course. The goal of the project is to understand how a consensus protocol works.The project focuses on implementing core Raft functionality and running controlled experiments to see how the system reacts to leader failures, network partitions, quorum loss, recovery, and changes in cluster size. The implementation is divided into three parts, with each part extending the system with additional capabilities.
