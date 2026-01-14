@@ -1,0 +1,84 @@
+# Raft Consensus Project (CSE707)
+
+This repository contains an implementation of the **Raft consensus algorithm** written in Go.
+
+
+## Project Structure
+
+The project is divided into **three parts**:
+
+1. **Part 1 – Leader Election**
+2. **Part 2 – Commands and Log Replication**
+3. **Part 3 – Dynamic Membership**
+
+Each part:
+- Is located in its own directory
+- Contains a `test_raft.go` file
+- Uses Go test cases to drive the Raft implementation
+
+---
+
+## Test Files
+
+All Raft tests are defined in: raft_test.go
+
+Test functions follow Go’s standard naming convention:
+
+```go
+func TestExampleName(t *testing.T) {
+    // test logic
+}
+
+## How to Run the Project
+
+### General Rule
+
+Raft is executed by running **Go test commands**.
+
+You can run:
+
+- A single test function  
+- All tests in one part  
+- All test html visualization tool 
+
+
+### A Single Test Function
+
+To run one specific test function, use the `-run` flag:
+
+```bash
+go test -v -run TestFunctionName
+```
+
+### All Tests in One Part
+
+To run all test functions in a single project part, navigate to that part’s directory and run:
+
+```bash
+go test -v
+
+
+### All Tests HTML Visualization
+
+This project provides an **HTML log visualization tool** that converts Raft test logs into an interactive timeline view.
+
+The visualization helps analyze:
+- Leader elections
+- Term changes
+- RPC communication
+- Log replication and commits
+
+---
+
+#### How to Generate the Visualization
+
+To generate an HTML visualization for all tests in a project part, use the provided PowerShell script:
+
+**Steps:**
+
+1. Go to the desired project part directory:
+
+2. Run the visualization script:
+
+```bash
+.\dotest.ps1
