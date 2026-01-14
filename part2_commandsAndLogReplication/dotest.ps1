@@ -15,7 +15,7 @@ param (
 )
 
 # Ensure tmp directory exists (used by raft-testlog-viz)
-$TmpDir = "C:\tmp\part1_election"
+$TmpDir = "C:\tmp\part2_logReplication"
 if (!(Test-Path $TmpDir)) {
     New-Item -ItemType Directory -Path $TmpDir | Out-Null
 }

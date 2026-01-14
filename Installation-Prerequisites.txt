@@ -2,5 +2,5 @@ This file lists the software prerequisites required to build, run, and reproduce
 
 1. Go Programming Language
    - Required to compile and run the Raft implementation and execute the test cases.
-   - Version: Go 1.20 or later is recommended.
+   - Version: Go 1.23 or later is recommended.
    - Official website: https://go.dev/
