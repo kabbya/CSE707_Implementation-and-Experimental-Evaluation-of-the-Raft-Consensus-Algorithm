@@ -32,13 +32,6 @@ This part adds support for dynamic cluster membership for experimental purposes.
 
 This project includes a log visualization tool that helps analyze the behavior of the Raft cluster during test execution. The tool converts textual test output into an HTML file that visually shows server states, leader transitions, and event ordering over time. This makes it easier to understand leader elections, failures, and recovery compared to reading raw logs.
 
-### Generate and View Visualization
-
-```bash
-go test -v -run <TestName> > rlog.txt 2>&1
-go run path/to/raft-testlog-viz/main.go < rlog.txt
-xdg-open <output-file>.html
-```
 ## Experiment / Observation 
 
 ### Part 1: Leader Election Experiments

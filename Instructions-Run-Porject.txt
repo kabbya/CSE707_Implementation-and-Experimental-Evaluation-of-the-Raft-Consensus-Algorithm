@@ -76,9 +76,18 @@ To generate an HTML visualization for all tests in a project part, use the provi
 
 **Steps:**
 
-1. Go to the desired project part directory:
-
-2. Run the visualization script:
+Go to the desired project part directory and Run the visualization script:
 
 ```bash
 .\dotest.ps1
+
+
+To generate an HTML visualization for all test a test, use the provided PowerShell script
+
+**Steps:**
+
+Go to the desired project part directory and Run the visualization script:
+
+go test -v -run <TestName> > rlog.txt 2>&1
+go run path/to/raft-testlog-viz/main.go < rlog.txt
+xdg-open <output-file>.html
